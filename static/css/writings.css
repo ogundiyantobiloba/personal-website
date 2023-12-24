@@ -1,10 +1,23 @@
 
-
 .writings {
 }
 
-.timeline {
-    position: relative;
-    padding: 2rem 0;
-    margin: 2rem auto;
+.writings-list {
+    padding-top: 5rem;
+}
+
+.writing-entries {
+    justify-content:  space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.writing-entries a {
+    color: #eeee;
+    text-decoration: none;
+}
+
+.writing-entries a:hover {
+    color: #00bcf2;
 }

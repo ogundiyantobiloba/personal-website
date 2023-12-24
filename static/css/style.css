@@ -33,7 +33,6 @@ a {
 }
 
 
-
 html {
 
     /* 10px / 16px = 0.625 = 62.5% */
@@ -81,7 +80,6 @@ section {
 .container {
     max-width: 100.25rem;
     margin: 0 auto;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -98,7 +96,6 @@ section {
 }
 
 .header-content {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100rem;
@@ -110,7 +107,6 @@ section {
 
 .nav-links {
     list-style: none;
-    display: flex;
     gap: 2rem;
 }
 
@@ -127,7 +123,6 @@ section {
 }
 
 .about-me {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
@@ -183,7 +178,6 @@ section {
 .heading-tertiary {
     margin-bottom: 2rem;
     color: #fff;
-    display: flex;
     align-items: center;
 }
 
@@ -208,7 +202,6 @@ button:hover {
 }
 
 .resume-button-container {
-    display: flex;
     justify-content: right;
     padding: 2rem;
 }
@@ -242,7 +235,6 @@ button:hover {
 
 
 .tools-list-item {
-    display: flex;
     gap: 1rem;
     align-items: center;
     color: #777777;
@@ -279,7 +271,6 @@ button:hover {
     background-color: #0a0a0a;
     border-top: 1px solid #cccc;
     padding: 2rem;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -287,7 +278,6 @@ button:hover {
 
 .footer-content {
     width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -297,7 +287,6 @@ button:hover {
 }
 
 .social-links {
-    display: flex;
     gap: 1rem; /* Adjust the gap to your preference */
 }
 
@@ -308,3 +297,6 @@ button:hover {
 }
 
 
+.flex {
+    display: flex;
+}

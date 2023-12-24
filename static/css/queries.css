@@ -77,6 +77,21 @@
     .header-logo {
     font-size: 3.3rem;
     }
+
+    .writing-entries {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 0.5rem;
+
+    }
+    #writing-date {
+        align-self: flex-start;
+    }
+
+    #writing-header {
+        align-self: flex-start;
+    }
 }
 
 
