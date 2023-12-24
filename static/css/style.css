@@ -39,9 +39,7 @@ html {
     /* 10px / 16px = 0.625 = 62.5% */
     /* Percentage of user's browser font-size setting */
     font-size: 62.5%;
-    overflow-x: hidden;
 
-    /* Does NOT work on Safari */
     /* scroll-behavior: smooth; */
 }
 
@@ -52,15 +50,24 @@ body {
     font-size: 1.6rem;
     background-color: #0a0a0a;
     color: #bbb;
-
-
-    /* Only works if there is nothing absolutely positioned in relation to body */
     overflow-x: hidden;
+}
+
+/* Header and navigation Bar Styling */
+
+header {
+    position: sticky;
+    padding-top: 2rem;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background: #0a0a0a;
+    opacity: 0.97;
 }
 
 /* make all sections have spacing */
 section {
-    padding: 5rem 0;
+    padding: 6.2rem 0;
 }
 
 .wrapper {
@@ -82,15 +89,7 @@ section {
     padding: 20px;
 }
 
-/* Header and navigation Bar Styling */
 
-header {
-    position: sticky;
-    padding-top: 20px;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-}
 
 .header-logo {
     font-family: 'Dancing script', sans-serif;
@@ -307,3 +306,5 @@ button:hover {
     height: auto; /* Keep height proportional */
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(101%);
 }
+
+
