@@ -1,0 +1,80 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/***
+ */
+@media(max-width: 61.875em ) {
+    .expertise-container {
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+        .expertise-text {
+        font-size: calc(0.75em + 0.5vw); /* This will scale the font size with the viewport width */
+    }
+
+    .expertise-icon {
+        width: calc(1.5em + 1vw); /* This will scale the icons with the viewport width */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    .heading-tertiary {
+        font-size: calc(1em + 0.5vw); /* This will scale the heading with the viewport width */
+    }
+
+
+    .resume-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media(max-width: 45.75em ) {
+
+
+    .expertise-container {
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .tools-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
+
+
+@media(max-width: 37.5em ) {
+    .tools-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer p {
+        font-size: 1.2rem;
+    }
+
+    .header-logo{
+        font-size: 2rem;
+    }
+
+    .nav-links li a {
+        font-size: 1.4rem;
+    }
+
+    .header-logo {
+    font-size: 3.3rem;
+    }
+}
