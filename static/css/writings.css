@@ -9,6 +9,8 @@
 .writing-entries {
     justify-content:  space-between;
     align-items: center;
+    border-top: 1px solid #00bcf2 ;
+    border-bottom: 1px solid #00bcf2;
     padding: 1rem;
     width: 100%;
 }
