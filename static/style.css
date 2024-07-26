@@ -35,7 +35,7 @@ header {
 }
 
 section {
-    padding: 6.2rem 0;
+    padding: 1.2rem 0;
 }
 
 .wrapper {
@@ -99,4 +99,13 @@ section {
 
 .highlights {
     color: #00bcf2;
+}
+
+ul {
+    padding-left: 1.5rem;
+    padding-top: 1.0rem;
+}
+
+li {
+    padding: 0.5rem;
 }
