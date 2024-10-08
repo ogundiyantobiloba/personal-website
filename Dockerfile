@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 golang:1.21.5-alpine as builder
+FROM --platform=linux/amd64 golang:1.21.5-alpine AS builder
 ENV GOARCH=amd64
 
 # set the working directory
@@ -10,7 +10,7 @@ COPY .  .
 # Build the Go app
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o main .
 
-FROM --platform=linux/amd64 alpine:3.19.0 as final
+FROM --platform=linux/amd64 alpine:3.19.0 AS final
 
 # Create a non-root user to limit privilegs as container would be web facing
 RUN addgroup -S app && adduser -S app -G app
