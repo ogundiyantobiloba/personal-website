@@ -1,12 +1,9 @@
 #!/bin/bash
 
 docker buildx build --no-cache --platform linux/amd64 -t website:latest .
-
 docker save website:latest -o website.tar
-
 scp website.tar apprentice:~/website.tar
 
-# SSH into the remote server to update the Docker container
 ssh apprentice << 'EOF'
   sudo docker load -i ~/website.tar
 
