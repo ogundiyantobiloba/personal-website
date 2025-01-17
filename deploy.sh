@@ -7,7 +7,7 @@ scp website.tar apprentice:~/website.tar
 ssh apprentice << 'EOF'
   sudo docker load -i ~/website.tar
 
-  rm ~/website.tar
+ sudo  rm ~/website.tar
 
   # Stop and remove the old container if it exists
   sudo docker stop website-container
